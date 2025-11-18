@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>크레노트 | 대구 이시아폴리스 크레스티드게코 분양 브리더</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="대구 동구 이시아폴리스 인근 사육방에서 크레스티드게코를 전문 브리딩·분양하는 크레노트입니다. 건강한 개체 분양, 카카오톡 오픈채팅 · 인스타그램 DM 문의 가능." />
+
+  <!-- 귀여운 느낌을 위한 한글 웹폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Jua&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --primary: #34d399;
+      --primary-dark: #22c55e;
+      --accent: #fb7185;
+      --bg: #fef9c3;
+      --bg-soft: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --card-bg: #ffffff;
+      --border: #f3e8ff;
+      --radius-lg: 24px;
+      --radius-md: 14px;
+      --shadow-soft: 0 18px 45px rgba(148, 163, 184, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #0f172a;
+      background: radial-gradient(circle at top left, #fee2e2, #fef9c3 32%, #f9fafb 100%);
+      line-height: 1.75;
+      scroll-behavior: smooth;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(255,255,255,0.96), rgba(255,255,255,0.9));
+      border-bottom: 1px solid rgba(244, 244, 245, 0.9);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-mark-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+
+    .logo-text-main {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 17px;
+      text-transform: uppercase;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      padding: 6px 12px;
+      border-radius: 999px;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.15s ease;
+      color: #4b5563;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(248, 250, 252, 0.9);
+      color: #0f766e;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(148, 163, 184, 0.45);
+    }
+
+    .nav-cta {
+      padding: 7px 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #f9fafb !important;
+      font-weight: 600;
+      box-shadow: 0 14px 35px rgba(248, 113, 113, 0.45);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(248, 113, 113, 0.7);
+    }
+
+    .nav-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+      color: #4b5563;
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    }
+
+    main {
+      padding-bottom: 60px;
+    }
+
+    .hero {
+      padding: 42px 0 30px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background-color: rgba(252, 252, 253, 0.85);
+      color: #166534;
+      font-size: 12px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(190, 242, 100, 0.8);
+      box-shadow: 0 6px 18px rgba(190, 242, 100, 0.4);
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 4.4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+      line-height: 1.35;
+      word-break: keep-all;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .hero-highlight {
+      background: linear-gradient(120deg, #22c55e, #fb7185);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-text {
+      color: #4b5563;
+      font-size: 15px;
+      max-width: 480px;
+      margin-bottom: 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      border: none;
+      cursor: pointer;
+      padding: 10px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #f9fafb;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 14px 30px rgba(248, 113, 113, 0.55);
+      transition: transform 0.12s ease, box-shadow 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(248, 113, 113, 0.75);
+    }
+
+    .btn-ghost {
+      border-radius: 999px;
+      border: 1px solid #fde68a;
+      padding: 9px 16px;
+      background-color: rgba(255,255,255,0.9);
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+      color: #374151;
+    }
+
+    .btn-ghost:hover {
+      background-color: #fffbeb;
+      transform: translateY(-1px);
+      box-shadow: 0 12px 30px rgba(251, 191, 36, 0.4);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .hero-meta span {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px dashed rgba(252, 211, 77, 0.7);
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #eef2ff, #ffffff);
+      border-radius: 24px;
+      padding: 18px 16px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(237, 233, 254, 0.9);
+      font-size: 14px;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .hero-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111827;
+      word-break: keep-all;
+    }
+
+    .hero-card-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+
+    .hero-stat {
+      padding: 9px 9px;
+      border-radius: var(--radius-md);
+      background-color: #f9fafb;
+      border: 1px dashed rgba(221, 214, 254, 0.9);
+    }
+
+    .hero-stat-label {
+      color: #6b7280;
+      margin-bottom: 3px;
+      word-break: keep-all;
+    }
+
+    .hero-stat-value {
+      font-weight: 700;
+      font-size: 15px;
+      color: #16a34a;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background-color: rgba(219,234,254,0.9);
+      color: #1e40af;
+      border: 1px solid rgba(191,219,254,0.9);
+    }
+
+    .hero-footer-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero {
+        padding-top: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 24px;
+      }
+      .hero-text {
+        font-size: 14px;
+      }
+    }
+
+    section {
+      padding: 30px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      position: relative;
+      line-height: 1.4;
+      word-break: keep-all;
+      white-space: nowrap;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 46px;
+      height: 4px;
+      border-radius: 999px;
+      margin-top: 5px;
+      background: linear-gradient(90deg, #f97316, #fb7185, #34d399);
+      opacity: 0.9;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .section-subtitle {
+        white-space: normal;
+      }
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    .about-text {
+      font-size: 15px;
+      color: #111827;
+    }
+
+    .about-highlight-box {
+      padding: 14px;
+      background-color: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    .about-highlight-box strong {
+      display: block;
+      font-size: 14px;
+      color: #16a34a;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 14px 12px;
+      border: 1px solid #f5d0fe;
+      box-shadow: var(--shadow-soft);
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(168, 85, 247, 0.28);
+    }
+
+    .card-icon {
+      width: auto;
+      height: 34px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      margin-bottom: 8px;
+      background-color: #fffbeb;
+      color: #b45309;
+      font-weight: 700;
+      border: 1px solid #fde68a;
+      padding: 4px 10px;
+      white-space: nowrap;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 15px;
+      word-break: keep-all;
+    }
+
+    .card-text {
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+
+    .card-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .cards-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .available-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .gecko-empty {
+      max-width: 900px;
+      margin: 24px auto 40px;
+      padding: 24px 28px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+
+    .gecko-empty h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .gecko-empty p {
+      font-size: 14px;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    .gecko-empty-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .gecko-card {
+      background-color: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #fee2e2;
+      padding: 10px;
+      box-shadow: 0 10px 26px rgba(248, 113, 113, 0.12);
+      font-size: 14px;
+    }
+
+    .gecko-photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: radial-gradient(circle at top, #fee2e2, #fef3c7);
+      border-radius: 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .gecko-photo span {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background-color: rgba(255,255,255,0.8);
+      border: 1px dashed rgba(148,163,184,0.7);
+    }
+
+    .gecko-name-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      gap: 8px;
+    }
+
+    .gecko-name {
+      font-weight: 600;
+      font-size: 15px;
+      word-break: keep-all;
+    }
+
+    .gecko-price {
+      font-size: 14px;
+      color: #166534;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .gecko-meta {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    .gecko-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+
+    .gecko-tag {
+      font-size: 11px;
+      padding: 3px 6px;
+      border-radius: 999px;
+      background-color: rgba(219,234,254,0.9);
+      color: #1e40af;
+    }
+
+    .gecko-note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      margin-left: 6px;
+    }
+
+    .status-available {
+      background-color: rgba(22,163,74,0.08);
+      color: #166534;
+      border: 1px solid rgba(22,163,74,0.4);
+    }
+
+    .status-reserved {
+      background-color: rgba(251,191,36,0.08);
+      color: #b45309;
+      border: 1px solid rgba(251,191,36,0.5);
+    }
+
+    .status-sold {
+      background-color: rgba(148,163,184,0.16);
+      color: #4b5563;
+      border: 1px solid rgba(148,163,184,0.6);
+      text-decoration: line-through;
+    }
+
+    @media (max-width: 900px) {
+      .available-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .care-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 18px;
+    }
+    .care-tools {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+    .care-tools-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .care-tools-text {
+      font-size: 13px;
+      color: #4b5563;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .care-tools-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .care-tools-buttons .btn-ghost {
+      font-size: 13px;
+      padding: 7px 14px;
+    }
+    @media (max-width: 768px) {
+      .care-tools {
+        padding: 14px 14px;
+      }
+      .care-tools-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .care-tools-buttons .btn-ghost {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+
+    .care-box {
+      background-color: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e0f2fe;
+      padding: 14px;
+      font-size: 14px;
+      color: #4b5563;
+      box-shadow: 0 12px 30px rgba(15,23,42,0.06);
+    }
+
+    .care-box h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #111827;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .care-box li {
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .care-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 20px;
+      padding: 18px 16px;
+      border-radius: 22px;
+      background: radial-gradient(circle at top left, #e0f2fe, #fef9c3);
+      border: 1px solid #bfdbfe;
+      box-shadow: var(--shadow-soft);
+      font-size: 14px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: #111827;
+    }
+
+    .contact-info dl {
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      row-gap: 4px;
+      column-gap: 8px;
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    .contact-info dt {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field {
+      display: grid;
+      gap: 4px;
+    }
+
+    .field label {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .field input,
+    .field textarea {
+      font: inherit;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 7px 9px;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      background-color: #ffffff;
+      color: #111827;
+      font-size: 14px;
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(52,211,153,0.4);
+      background-color: #ffffff;
+    }
+
+    .contact-button-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
+    }
+
+    .btn-submit {
+      border: none;
+      cursor: pointer;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(248,113,113,0.45);
+    }
+
+    @media (max-width: 900px) {
+      .contact-box {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 16px 0 24px;
+      font-size: 12px;
+      color: var(--muted);
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-decoration-color: rgba(148,163,184,0.8);
+      text-underline-offset: 2px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px dashed rgba(209,213,219,0.9);
+      margin: 18px 0;
+    }
+
+    /* 개체 라이트박스 */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 100;
+    }
+
+    .lightbox-overlay.active {
+      display: flex;
+    }
+
+    .lightbox {
+      background: #f9fafb;
+      border-radius: 18px;
+      max-width: 1100px;
+      width: 100%;
+      box-shadow: 0 24px 60px rgba(15,23,42,0.8);
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.05fr);
+      gap: 16px;
+      padding: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .lightbox {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .lightbox-main {
+      background: #020617;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .lightbox-main img {
+      width: 100%;
+      height: auto;
+      max-height: 82vh;
+      object-fit: contain;
+      border-radius: 0;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.16s ease-out;
+      cursor: zoom-in;
+    }
+
+    .lightbox-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .lightbox-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .lightbox-title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .lightbox-id {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .lightbox-meta {
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    .lightbox-note {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .lightbox-thumbs {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .lightbox-thumb {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .lightbox-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .lightbox-thumb.active {
+      border-color: #fb7185;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: #f97316;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px rgba(15,23,42,0.4), 0 10px 20px rgba(15,23,42,0.6);
+      z-index: 20;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 15;
+    }
+
+    .lightbox-nav button {
+      pointer-events: auto;
+      border: none;
+      background: rgba(15,23,42,0.85);
+      color: #f9fafb;
+      width: 34px;
+      height: 52px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 8px;
+      box-shadow: 0 0 0 2px rgba(15,23,42,0.4), 0 10px 22px rgba(15,23,42,0.7);
+    }
+
+    .lightbox-counter {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+
+    /* 브리딩 라인 모달 */
+    .line-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 110;
+    }
+
+    .line-overlay.active {
+      display: flex;
+    }
+
+    .line-modal {
+      background: #f9fafb;
+      border-radius: 20px;
+      max-width: 960px;
+      width: 100%;
+      box-shadow: 0 24px 60px rgba(15,23,42,0.85);
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      gap: 16px;
+      padding: 16px;
+      position: relative;
+    }
+
+    @media (max-width: 860px) {
+      .line-modal {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .line-main {
+      background: #020617;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .line-main img {
+      width: 100%;
+      height: auto;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+
+    .line-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .line-title {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Jua", system-ui, sans-serif;
+    }
+
+    .line-tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background-color: #eef2ff;
+      color: #3730a3;
+    }
+
+    .line-subtitle {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .line-history {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    .line-bullets {
+      font-size: 13px;
+      color: #4b5563;
+      padding-left: 18px;
+      list-style: disc;
+    }
+
+    .line-thumbs {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .line-thumb {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .line-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .line-thumb.active {
+      border-color: #34d399;
+    }
+
+    .line-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: rgba(15,23,42,0.85);
+      color: #f9fafb;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .line-counter {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+  
+    /* ============================================
+       🔧 시안성 & 접근성 개선용 오버라이드 스타일
+       - 대비 강화
+       - 폰트/줄간격 조정
+       - 모바일 가독성 개선
+    ============================================ */
+
+    body {
+      color: #0f172a;
+      line-height: 1.75;
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    /* 본문 계열 텍스트 전체적으로 조금 더 진하게 */
+    p,
+    li,
+    .hero-text,
+    .about-text,
+    .card-text,
+    .card-meta,
+    .gecko-meta,
+    .gecko-note,
+    .care-box,
+    .contact-info,
+    .contact-info dl,
+    .hero-footer-note {
+      color: #1f2933;
+    }
+
+    /* 제목 계열은 명확하게 진한 톤 */
+    h1, h2, h3,
+    .section-title,
+    .card-title,
+    .gecko-name,
+    .hero-card-title {
+      color: #0b1120;
+    }
+
+    /* 카드/박스 배경 대비 정리 */
+    .card,
+    .gecko-card,
+    .care-box,
+    .about-highlight-box,
+    .hero-card,
+    .contact-box {
+      background-color: #ffffff;
+      border-color: #e5e7eb;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+    }
+
+    /* 구분선 좀 더 은은하게 */
+    .divider {
+      border-top-color: rgba(209, 213, 219, 0.7);
+    }
+
+    /* 버튼 시인성 & 터치 영역 확대 */
+    .btn-primary,
+    .btn-ghost,
+    .btn-submit {
+      font-size: 14px;
+      padding: 10px 22px;
+    }
+
+    .btn-primary {
+      box-shadow: 0 16px 32px rgba(248, 113, 113, 0.6);
+    }
+
+    .btn-ghost {
+      border-color: #facc15;
+    }
+
+    /* 네비게이션 링크 대비 강화 */
+    .nav-links a {
+      color: #111827;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #0f766e;
+    }
+
+    /* 링크 기본 컬러 살짝 강조 */
+    a {
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 2px;
+    }
+
+    /* 리스트 가독성을 위한 줄간격 */
+    ul, li {
+      line-height: 1.7;
+    }
+
+    /* 개체 카드 정보 정리 */
+    .gecko-meta {
+      font-size: 13px;
+    }
+
+    .gecko-note {
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* 히어로 영역 텍스트 폭 줄여서 읽기 편하게 */
+    .hero-text {
+      max-width: 520px;
+    }
+
+    /* 라이트박스 정보 영역 글자 대비 */
+    .lightbox-info,
+    .lightbox-meta,
+    .lightbox-note {
+      color: #111827;
+    }
+
+    .lightbox-id,
+    .lightbox-counter {
+      color: #4b5563;
+    }
+
+    /* 브리딩 라인 모달의 설명 가독성 */
+    .line-history,
+    .line-bullets {
+      line-height: 1.7;
+      color: #111827;
+    }
+
+    /* 푸터 대비 강화 */
+    footer {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #4b5563;
+    }
+
+    footer .footer-links a {
+      color: #4b5563;
+    }
+
+    /* --------------------------------------------
+       📱 모바일(태블릿 이하) 가독성 튜닝
+    -------------------------------------------- */
+    @media (max-width: 900px) {
+      body {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .hero {
+        padding-top: 26px;
+      }
+
+      .hero-title {
+        font-size: 24px;
+        line-height: 1.35;
+      }
+
+      .hero-text,
+      .about-text,
+      .care-box,
+      .card-text,
+      .gecko-note {
+        font-size: 14px;
+      }
+
+      .nav-links {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 18px;
+      }
+
+      .card,
+      .gecko-card,
+      .care-box,
+      .about-highlight-box {
+        padding: 14px;
+      }
+
+      .gecko-name-line {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .gecko-price {
+        font-size: 13px;
+      }
+    }
+
+.more-geckos-info {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: #fffef2;
+    box-shadow: 0 10px 26px rgba(15,23,42,0.10);
+    text-align: center;
+}
+
+.more-geckos-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.more-geckos-text {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          <div class="logo-mark">
+            <img src="logo-crenote-gecko.png" alt="Crenote 로고" class="logo-mark-img" />
+          </div>
+          <div>
+            <div class="logo-text-main">CRENOTE</div>
+            <div class="logo-text-sub">Crested Gecko Breeder</div>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="메뉴 열기/닫기">≡</button>
+        <div class="nav-links">
+          <a href="#about">소개</a>
+          <a href="#available">분양 중</a>
+          <a href="#lines">브리딩 라인</a>
+          <a href="#care">사육 가이드</a>
+          <a href="#contact" class="nav-cta">문의하기</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-badge">
+            <span>대구 크레스티드게코 브리더</span>
+            <span>CRENOTE</span>
+          </div>
+                    <h1 class="hero-title">
+            존재 자체로 소중한<br />
+            <span class="hero-highlight-green">당신의 첫</span>
+            <span class="hero-highlight-green2">크레</span>
+            <span class="hero-highlight-red">친구</span>를 만나는 곳
+          </h1>
+          <p class="hero-text">
+            안녕하세요, 트라이·슈달·차콜 라인을 주력으로 브리딩하고 있는
+            <strong>크레노트</strong>입니다.<br />
+            “예쁜 것”보다도 <strong>“건강하고 오래 함께 갈 수 있는 아이”</strong>를
+            가장 먼저 생각하면서 천천히, 꾸준히 브리딩하고 있어요. **예쁜것은 덤**
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('available').scrollIntoView({behavior:'smooth'})">
+              지금 분양 중인 아이들 보기
+            </button>
+            <button class="btn-ghost" onclick="document.getElementById('care').scrollIntoView({behavior:'smooth'})">
+              입양 전에 이것만은 꼭!
+            </button>
+          </div>
+          <div class="hero-meta">
+            <span>3~4세대 이상 자체 브리딩 라인 위주</span>
+            <span>탈피 · 피딩 · 육발 등 체크 후 분양</span>
+            <span>카톡 및 인스타 DM으로 편하게 상담 가능</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="브리딩 정보">
+          <div class="hero-card-header">
+            <div>
+              <div class="hero-card-title">크레노트 한눈에 보기</div>
+              <div class="hero-card-subtitle">브리딩 라인 및 마인드 </div>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-label">트라이 라인</div>
+              <div class="hero-stat-value">텐저린 / 킹덤</div>
+              <div class="card-meta">월빡, 더티핀, 3차 형질 강화</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-label">슈퍼 달마시안</div>
+              <div class="hero-stat-value">퐁고 라인</div>
+              <div class="card-meta">화이트 베이스, 점의 수·밸런스 위주</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-label">차콜 / 다크</div>
+              <div class="hero-stat-value">차콜 라인</div>
+              <div class="card-meta">다크 톤 유지, 지속적인 발 색유지 중시</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-label">분양 체크 포인트</div>
+              <div class="hero-stat-value">“안정” 우선</div>
+              <div class="card-meta">육발·부정교합·탈피·피딩 등 확인 후 리스트 업</div>
+            </div>
+          </div>
+          <div class="hero-tags">
+            <span class="hero-tag">Crested Gecko</span>
+            <span class="hero-tag">Tri-Extreme Harlequin</span>
+            <span class="hero-tag">Super Dal / Charcoal</span>
+          </div>
+          <p class="hero-footer-note">
+            “한 번 인연 맺은 아이는 분양이 끝나도 끝이 아니라고 생각합니다.<br />
+            궁금한 점이 생기면 언제든 편하게 물어보세요.”
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 브리더 소개 -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">크레노트는 이런 브리더예요</h2>
+          <p class="section-subtitle">어떤 마음으로 브리딩하고 있을까요?</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              크레노트는 10년 전 작은 호기심에서 시작한 사육이 점점 깊어지면서,
+              지금은 <strong>“안정적인 브리딩과 분양”</strong>을 목표로 운영하고 있는
+              크레스티드게코 브리더입니다.
+            </p>
+            <br />
+            <p>
+              취향에 맞는 라인들을 여러 해에 걸쳐 강화해 왔고,
+              <strong>체형이 탄탄하고, 성격과 먹이 반응이 좋은 개체</strong> 위주로 브리딩을 진행합니다.
+              단순히 “예쁜 한 장의 사진”이 아니라, 실제로 집에서 함께 지내기에 편한 아이들을
+              만들어 가고 싶어요.
+            </p>
+            <br />
+            <p>
+              분양을 고민하시는 분들께는 <strong>장점뿐 아니라 아쉬운 부분도 솔직하게 말씀드리려</strong>고 합니다.
+              입양 후에도 “이거 물어봐도 되나…?” 고민하지 마시고,
+              사소한 질문이라도 편하게 톡 한 번 남겨 주세요.
+            </p>
+          </div>
+          <aside class="about-highlight-box">
+            <strong>크레노트가 지키는 작은 약속들</strong>
+            <p>
+              • 시즌마다 적정 마릿수만 브리딩해, 개체별로 충분히 살펴봅니다.<br />
+              • 인브리딩은 절대 지양하고, 혈통과 유전 겹침을 생각하며 그룹을 구성합니다.<br />
+              • 탈피 상태, 육발, 부정 교합 등 기본 체크 후에야 분양 리스트에 올립니다.<br />
+              • 처음 키우는 분이라면, 친절하게 사육정보 안내와 입양자 분의 취향 아이를 함께 찾아드립니다.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 분양 중인 개체 -->
+    <section id="available">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">크레노트 추천 리스트</h2>
+          <p class="section-subtitle">
+            사진을 누르면 크게 보이고, 여러 장의 사진을 천천히 넘겨볼 수 있어요.
+          </p>
+        </div>
+        <div class="available-grid" id="available-grid">
+          <!-- JS로 자동 렌더링 -->
+        </div>
+        <div id="gecko-empty" class="gecko-empty" style="display:none;">
+          <h3>지금은 추천 리스트 준비 중이에요</h3>
+          <p>
+            새 시즌 브리딩 후 건강 상태가 충분히 확인된 아이들만<br />
+            이 리스트에 올라갑니다.
+          </p>
+          <div class="gecko-empty-actions">
+            <a href="https://www.feedle.me/profile/7fa291a4-9d0f-40e2-9c93-f0169f9ed916" target="_blank" rel="noopener" class="btn-primary">
+              피들에서 전체 개체 보기
+            </a>
+            <a href="#contact" class="btn-ghost">카카오톡 문의하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="more-geckos-info">
+      <h3 class="more-geckos-title">위 추천 리스트 외 더 많은 개체를 보고 싶다면?</h3>
+      <button type="button" class="btn-primary" onclick="window.open('https://www.feedle.me/profile/7fa291a4-9d0f-40e2-9c93-f0169f9ed916','_blank')">
+        피들 분양리스트 보기
+      </button>
+      <p class="more-geckos-text">
+        피들 리스트 외 개체를 보고 싶으신 분들은 <strong>크레노트 사육방 방문</strong>도 가능합니다.<br />
+        (방문은 예약제로 운영됩니다)
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- 브리딩 라인 소개 -->
+    <section id="lines">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">크레노트 브리딩 라인</h2>
+          <p class="section-subtitle">
+            카드 하나씩 눌러보시면, 각 라인의 분위기와 히스토리를 더 자세히 보실 수 있어요.
+          </p>
+        </div>
+        <div class="cards-row">
+          <article class="card" data-line="tri">
+            <div class="card-icon">TRI</div>
+            <h3 class="card-title">Tri-Extreme Harlequin 라인</h3>
+            <p class="card-text">
+              크라운·월·스팟이 골고루 잘 올라오는 3차 형질 강화 트라이 라인입니다.
+              텐저린 계열의 따뜻한 색감과 또렷한 패턴을 동시에 노리고 있어요.
+            </p>
+            <p class="card-meta">
+              • 3세대 이상에서 패턴 고정력 확인 중<br />
+              • 얼굴·측면까지 이어지는 패턴을 선호합니다.
+            </p>
+          </article>
+          <article class="card" data-line="superdal">
+            <div class="card-icon">슈퍼달마시안</div>
+            <h3 class="card-title">슈퍼 달마시안 / 퐁고 라인</h3>
+            <p class="card-text">
+              해외 유명 브리더 순혈 “퐁고”를 기반으로 한 화이트 베이스 슈퍼 달 라인입니다.
+              단순히 점이 많기만 한 개체보다는, 전체 조화가 예쁜 아이들을 추구해요.
+            </p>
+            <p class="card-meta">
+              • 화이트 베이스 위에 안정적인 점 발현<br />
+              • 점의 숫자·배치·크기를 함께 보고 선별합니다.
+            </p>
+          </article>
+          <article class="card" data-line="charcoal">
+            <div class="card-icon">차콜</div>
+            <h3 class="card-title">차콜 / 다크 라인</h3>
+            <p class="card-text">
+              순혈 차콜 수컷과 다크벅·차콜 계열 암컷들로 구성한 다크 톤 라인입니다.
+              “그냥 까만”이 아니라, 오래 봐도 질리지 않는 디테일을 목표로 합니다.
+            </p>
+            <p class="card-meta">
+              • 순혈 차콜 × 다크벅/차콜 아웃크로싱<br />
+              • 성장 후에도 유지되는 깊은 색감을 지향합니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 사육 가이드 -->
+    <section id="care">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">처음이라도 괜찮아요</h2>
+          <p class="section-subtitle">크레스티드게코, 이렇게만 준비해 주시면 충분해요.</p>
+        </div>
+        <div class="care-grid">
+          <div class="care-box">
+            <h3>기본 환경 셋업</h3>
+            <ul style="padding-left:18px; list-style:disc;">
+              <li>온도: 22~27℃ 정도가 편안한 구간입니다. (직사광선, 뜨거운 열기 X)</li>
+              <li>습도: 50~70%를 기준으로, 탈피 전후에는 조금 더 챙겨주세요.</li>
+              <li>사육장: 통풍이 잘 되는 타입이면 괜찮습니다. 크레스티드 게코 아이들은 환기가 엄청 중요해요!</li>
+              <li>필수 구성: 은신처, 유목, 식물 등 숨을 곳과 타고 놀 곳 마련하기.</li>
+              <li>바닥재: 키친타월, 바크,  전용 바닥재 등 취향에 맞게 선택.</li>
+            </ul>
+            <br />
+            <h3>먹이와 급여 주기</h3>
+            <ul style="padding-left:18px; list-style:disc;">
+              <li>슈퍼푸드와 귀뚜라미 가루를 아이들 성장에 맞는 비율로 만들어 급여합니다.</li>
+              <li>입양 시점에 맞춰 먹이 브랜드, 급여 주기, 급여 팁을 함께 안내드려요.</li>
+            </ul>
+          </div>
+          <div class="care-box">
+            <h3>입양 전에 한 번만 더 생각해보기</h3>
+            <ul style="padding-left:18px; list-style:disc;">
+              <li>“귀엽다!”에서 바로 입양보다는, 하루 이틀 정도는 천천히 고민해 주세요.</li>
+              <li>사육 환경(사육장·온습도 관련 용품·먹이)이 준비된 후에 분양을 진행하시는 걸 추천드립니다.</li>
+              <li>생명 특성상 단순 변심에 의한 환불은 어려운 점 양해 부탁드립니다.</li>
+              <li>입양 후 사소한 질문도 괜찮아요. “이거 물어봐도 되나…?” 고민 말고 톡 주세요.</li>
+              <li>계절·지역에 따라 파충류 배송업체 / 대면 분양 여부를 안내드리고, 안전을 최우선으로 합니다.</li>
+            </ul>
+          
+        <div class="care-tools">
+          <h3 class="care-tools-title">크레노트 계산기 모음</h3>
+          <p class="care-tools-text">
+            처음 키우시는 분들도 숫자로 한 번 더 체크해 보실 수 있도록,
+            크레 해칭일·모프·해칭 마릿수 계산기를 준비해 두었어요.
+          </p>
+          <div class="care-tools-buttons">
+            <a href="https://bin-jin-report.tistory.com/80" target="_blank" rel="noopener" class="btn-ghost">
+              크레 해칭일 계산기
+            </a>
+            <a href="https://bin-jin-report.tistory.com/126" target="_blank" rel="noopener" class="btn-ghost">
+              크레 모프 계산기
+            </a>
+            <a href="https://bin-jin-report.tistory.com/142" target="_blank" rel="noopener" class="btn-ghost">
+              예상 해칭 마릿수 계산기
+            </a>
+          </div>
+        </div>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 문의 -->
+    
+    <!-- 문의 -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">문의·예약은 이렇게 도와드려요</h2>
+          <p class="section-subtitle">카카오톡 오픈채팅 또는 인스타그램 DM으로 편하게 문의 주세요.</p>
+        </div>
+        <div class="contact-box">
+          <div class="contact-info">
+            <p>
+              크레노트는 <strong>카카오톡 오픈채팅</strong>과 <strong>인스타그램 DM</strong>으로만 문의·예약을 받고 있습니다.<br />
+              궁금한 아이가 있거나, 처음이라 어떤 라인이 좋을지 고민된다면 편하게 톡 남겨 주세요.
+            </p>
+            <dl>
+              <dt>카카오톡</dt>
+              <dd>
+                <a href="https://open.kakao.com/o/scNvM65e" target="_blank" rel="noopener">
+                  오픈채팅 바로가기
+                </a>
+              </dd>
+              <dt>인스타그램</dt>
+              <dd>
+                <a href="https://www.instagram.com/cre_note?igsh=MTJzNG9reWxlZWx4aA==" target="_blank" rel="noopener">
+                  @cre_note DM
+                </a>
+              </dd>
+              <dt>위치</dt>
+              <dd>
+                대구 동구 <strong>이시아폴리스 인근 사육방</strong>에서 관리 중입니다.<br />
+                방문이 필요하신 경우, <strong>사전 예약 후 대면 분양</strong>으로 도와드려요.
+              </dd>
+              <dt>답변 시간</dt>
+              <dd>평일 저녁·주말 위주로 순차 답변 드리고 있습니다.</dd>
+            </dl>
+            <p style="margin-top:8px; font-size:12px; color:#6b7280;">
+              ※ 카카오톡·인스타그램 DM 확인 후 순차적으로 답변드려요.<br />
+              ※ 긴급 문의보다는, 여유를 가지고 편하게 남겨 주시면 감사하겠습니다 :)
+            </p>
+          </div>
+          <div class="contact-form" style="display:flex; flex-direction:column; gap:8px; justify-content:center;">
+            <p style="font-size:13px; color:#4b5563; margin-bottom:2px;">
+              아래 버튼을 눌러 바로 문의하실 수 있어요.
+            </p>
+            <a
+              href="https://open.kakao.com/o/scNvM65e"
+              target="_blank"
+              rel="noopener"
+              class="btn-primary"
+              style="text-align:center; display:inline-block;"
+            >
+              카카오톡으로 문의하기
+            </a>
+            <a
+              href="https://www.instagram.com/cre_note?igsh=MTJzNG9reWxlZWx4aA=="
+              target="_blank"
+              rel="noopener"
+              class="btn-ghost"
+              style="text-align:center; justify-content:center;"
+            >
+              인스타그램 DM 보내기
+            </a>
+            <p style="font-size:12px; color:#6b7280; margin-top:4px;">
+              ※ 별도의 입력 폼 없이, 카톡·인스타 DM으로만 소통하고 있어요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> CRENOTE. 함께해 주셔서 감사합니다.</div>
+      <div class="footer-links">
+        <a href="#about">브리더 소개</a>
+        <a href="#available">분양 중</a>
+        <a href="#care">사육 가이드</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 개체용 라이트박스 -->
+  <div class="lightbox-overlay" id="lightbox-overlay" aria-hidden="true">
+    <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <div class="lightbox-main">
+        <button class="lightbox-close" type="button" aria-label="닫기" onclick="closeGallery()">×</button>
+        <div class="lightbox-nav">
+          <button type="button" aria-label="이전 사진" onclick="changePhoto(-1)">‹</button>
+          <button type="button" aria-label="다음 사진" onclick="changePhoto(1)">›</button>
+        </div>
+        <img id="lightbox-main-img" src="" alt="" />
+      </div>
+      <div class="lightbox-info">
+        <div class="lightbox-title-row">
+          <div>
+            <div class="lightbox-title" id="lightbox-title"></div>
+            <div class="lightbox-id" id="lightbox-id"></div>
+          </div>
+        </div>
+        <div class="lightbox-meta" id="lightbox-meta"></div>
+        <div class="lightbox-note" id="lightbox-note"></div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+        <div class="lightbox-thumbs" id="lightbox-thumbs">
+          <!-- 썸네일 동적 추가 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 브리딩 라인 모달 -->
+  <div class="line-overlay" id="line-overlay" aria-hidden="true">
+    <div class="line-modal" role="dialog" aria-modal="true" aria-labelledby="line-modal-title">
+      <button class="line-close" type="button" aria-label="닫기" onclick="closeLineModal()">×</button>
+      <div class="line-main">
+        <img id="line-main-img" src="" alt="" />
+      </div>
+      <div class="line-info">
+        <div class="line-title" id="line-modal-title">
+          <span id="line-title-text"></span>
+          <span class="line-tag" id="line-tag-text"></span>
+        </div>
+        <p class="line-subtitle" id="line-subtitle-text"></p>
+        <p class="line-history" id="line-history-text"></p>
+        <ul class="line-bullets" id="line-bullets-list"></ul>
+        <div class="line-counter" id="line-counter"></div>
+        <div class="line-thumbs" id="line-thumbs">
+          <!-- 썸네일 동적 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle?.addEventListener('click', () => {
+      const isOpen = navLinks.style.display === 'flex';
+      navLinks.style.display = isOpen ? 'none' : 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '54px';
+      navLinks.style.right = '16px';
+      navLinks.style.background = 'rgba(255,255,255,0.98)';
+      navLinks.style.padding = '10px';
+      navLinks.style.borderRadius = '14px';
+      navLinks.style.boxShadow = '0 12px 30px rgba(15,23,42,0.12)';
+    });
+
+    /* 1) 분양 개체 데이터 */
+    const geckos = [
+      // 아래는 예시 데이터입니다. 분양할 아이가 생기면 이 형식에 맞춰 추가해 주세요.
+       {
+         id: "CR-001",
+         name: "Pin Tri Extreme Harlequin",
+         price: "60만원",
+         status: "available", // available | reserved | sold
+         hatchDate: "2024-09-20",
+         weight: "30g",
+         sex: "수",
+         tags: ["Pin-Tri", "굵은 3차 형질", "프로스트 질감"],
+        note: "creyoung님의 샤넬2세인 박하와 자체 텐저린 암컷의 조합으로 입체감 있는 형질과 명확한 3차 형질을 자랑합니다",
+        images: [
+          "images/CR-001-1.jpg",
+          "images/CR-001-2.jpg"
+        ]
+      }
+    ];
+
+
+    function getStatusBadge(status) {
+      if (status === "available") {
+        return '<span class="status-badge status-available">분양 가능</span>';
+      }
+      if (status === "reserved") {
+        return '<span class="status-badge status-reserved">예약 중</span>';
+      }
+      if (status === "sold") {
+        return '<span class="status-badge status-sold">분양 완료</span>';
+      }
+      return "";
+    }
+
+    function renderGeckos() {
+      const container = document.getElementById("available-grid");
+      const emptyBox = document.getElementById("gecko-empty");
+      if (!container) return;
+
+      // 배열이 비어 있으면 카드 대신 안내 박스만 보여주기
+      if (!geckos || geckos.length === 0) {
+        container.innerHTML = "";
+        if (emptyBox) emptyBox.style.display = "block";
+        return;
+      }
+
+      // 데이터가 있으면 안내 박스는 숨기고 카드 렌더링
+      if (emptyBox) emptyBox.style.display = "none";
+
+      container.innerHTML = geckos.map((g, index) => {
+        const hasImages = Array.isArray(g.images) && g.images.length > 0;
+        const thumb = hasImages
+          ? `<img src="${g.images[0]}" alt="${g.id} ${g.name}" />`
+          : `<span>${g.id} 사진 준비중</span>`;
+        const statusBadge = getStatusBadge(g.status);
+
+        return `
+          <article class="gecko-card">
+            <div class="gecko-photo" onclick="openGallery(${index})" aria-label="${g.id} ${g.name} 사진 자세히 보기">
+              ${thumb}
+            </div>
+            <div class="gecko-name-line">
+              <span class="gecko-name">${g.id} | ${g.name}</span>
+              <span class="gecko-price">${g.price}${statusBadge}</span>
+            </div>
+            <p class="gecko-meta">
+              ${g.sex} · 해칭일: ${g.hatchDate} · 현재체중: ${g.weight}
+            </p>
+            <div class="gecko-tag-row">
+              ${g.tags.map(t => `<span class="gecko-tag">${t}</span>`).join("")}
+            </div>
+            <p class="gecko-note">
+              ${g.note}
+            </p>
+          </article>
+        `;
+      }).join("");
+    }
+
+    renderGeckos();
+
+    /* 2) 개체 라이트박스 로직 */
+    let currentGeckoIndex = 0;
+    let currentPhotoIndex = 0;
+
+    const overlayEl = document.getElementById("lightbox-overlay");
+    const mainImgEl = document.getElementById("lightbox-main-img");
+    const titleEl = document.getElementById("lightbox-title");
+    let zoomLevel = 1;
+
+    function resetZoom() {
+      zoomLevel = 1;
+      if (mainImgEl) {
+        mainImgEl.style.transform = 'scale(1)';
+      }
+    }
+
+    const idEl = document.getElementById("lightbox-id");
+    const metaEl = document.getElementById("lightbox-meta");
+    const noteEl = document.getElementById("lightbox-note");
+    const thumbsEl = document.getElementById("lightbox-thumbs");
+    const counterEl = document.getElementById("lightbox-counter");
+
+    function openGallery(index) {
+      const gecko = geckos[index];
+      if (!gecko) return;
+
+      currentGeckoIndex = index;
+      currentPhotoIndex = 0;
+
+      titleEl.textContent = gecko.name;
+      idEl.textContent = gecko.id;
+      metaEl.textContent = `${gecko.sex} · 해칭일: ${gecko.hatchDate} · 현재체중: ${gecko.weight} · 상태: ${gecko.price}`;
+      noteEl.textContent = gecko.note;
+
+      renderThumbnails();
+      resetZoom();
+      updateMainImage();
+
+      overlayEl.classList.add("active");
+      overlayEl.setAttribute("aria-hidden", "false");
+    }
+
+    function closeGallery() {
+      overlayEl.classList.remove("active");
+      overlayEl.setAttribute("aria-hidden", "true");
+    }
+
+    function renderThumbnails() {
+      const gecko = geckos[currentGeckoIndex];
+      const images = Array.isArray(gecko.images) ? gecko.images : [];
+      thumbsEl.innerHTML = images.map((src, idx) => `
+        <button class="lightbox-thumb ${idx === currentPhotoIndex ? "active" : ""}" type="button" onclick="setPhotoIndex(${idx})">
+          <img src="${src}" alt="${gecko.id} ${gecko.name} 사진 ${idx + 1}" />
+        </button>
+      `).join("");
+
+      if (images.length > 0) {
+        counterEl.textContent = `${currentPhotoIndex + 1} / ${images.length}`;
+      } else {
+        counterEl.textContent = "";
+      }
+    }
+
+    function updateMainImage() {
+      const gecko = geckos[currentGeckoIndex];
+      const images = Array.isArray(gecko.images) ? gecko.images : [];
+
+      if (images.length === 0) {
+        mainImgEl.src = "";
+        mainImgEl.alt = `${gecko.id} ${gecko.name} 사진 준비중`;
+        return;
+      }
+
+      currentPhotoIndex = Math.max(0, Math.min(currentPhotoIndex, images.length - 1));
+      resetZoom();
+      mainImgEl.src = images[currentPhotoIndex];
+      mainImgEl.alt = `${gecko.id} ${gecko.name} 사진 ${currentPhotoIndex + 1}`;
+      renderThumbnails();
+    }
+
+    function setPhotoIndex(idx) {
+      currentPhotoIndex = idx;
+      updateMainImage();
+    }
+
+    function changePhoto(delta) {
+      const gecko = geckos[currentGeckoIndex];
+      if (!gecko || !Array.isArray(gecko.images) || gecko.images.length === 0) return;
+
+      const total = gecko.images.length;
+      currentPhotoIndex = (currentPhotoIndex + delta + total) % total;
+      updateMainImage();
+    }
+
+    if (mainImgEl) {
+      mainImgEl.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        const rect = mainImgEl.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        const delta = e.deltaY < 0 ? 0.12 : -0.12;
+        zoomLevel = Math.min(3, Math.max(1, zoomLevel + delta));
+        mainImgEl.style.transformOrigin = `${x}% ${y}%`;
+        mainImgEl.style.transform = `scale(${zoomLevel})`;
+      }, { passive: false });
+
+      mainImgEl.addEventListener("dblclick", () => {
+        resetZoom();
+      });
+    }
+
+    overlayEl.addEventListener("click", (e) => {
+      if (e.target === overlayEl) {
+        closeGallery();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && overlayEl.classList.contains("active")) {
+        closeGallery();
+      }
+    });
+
+    /* 3) 브리딩 라인 데이터 */
+    
+    const breedingLines = {
+      tri: {
+        title: "Tri-Extreme Harlequin 라인",
+        tag: "TRI / 텐저린 계열",
+        subtitle: "3차 형질(크라운, 월, 스팟)을 균형 있게 끌어올린 크레노트의 메인 라인입니다.",
+        history:
+          "초기에는 비교적 얇은 3차 형질의 트라이 개체들로 시작했지만, 몇 시즌에 걸쳐 크라운·월·스팟이 더 풍부하게 올라오는 개체들 위주로 남겨졌습니다. 텐저린 계열의 따뜻한 색감과 하이 컨트라스트 패턴을 동시에 가져가는 것이 이 라인의 큰 방향입니다.",
+        bullets: [
+          "텐저린·하이컨트라스트 트라이 위주",
+          "3세대 이상에서 패턴 고정력 확인 중",
+          "지나치게 날뛰는 개체보다는 안정적인 템포 지향"
+        ],
+        images: [
+          "images/lines/tri-1.jpg",
+          "images/lines/tri-2.jpg",
+          "images/lines/tri-3.jpg",
+          "images/lines/tri-4.jpg",
+          "images/lines/tri-5.jpg",
+          "images/lines/tri-6.jpg",
+          "images/lines/tri-7.jpg"
+        ]
+      },
+      superdal: {
+        title: "슈퍼 달마시안 라인",
+        tag: "퐁고 라인 / 화이트 베이스",
+        subtitle: "해외 유명 브리더 순혈 ‘퐁고’를 기반으로 한 화이트 베이스 슈퍼 달 라인입니다.",
+        history:
+          "메인 수컷인 ‘퐁고’는 깨끗한 화이트 베이스 위에 점이 안정적으로 올라오는 것이 특징입니다. 단순히 점의 개수만 늘리는 것이 아니라, 전체적인 밸런스를 유지하면서도 ‘슈퍼’라는 이름에 어울리는 밀도를 가지는 개체들을 중심으로 후대를 보고 있습니다.",
+        bullets: [
+          "화이트 베이스 기반 슈퍼 달마시안",
+          "점의 숫자·배치·크기의 조화를 중시",
+          "2~3세대 자손에서 점 발현 경향을 체크 중"
+        ],
+        images: [
+          "images/lines/superdal-1.jpg",
+          "images/lines/superdal-2.jpg",
+          "images/lines/superdal-3.jpg"
+        ]
+      },
+      charcoal: {
+        title: "차콜 / 다크 라인",
+        tag: "Charcoal / Dark",
+        subtitle: "순혈 차콜 수컷과 다크벅·차콜 계열 암컷들의 조합으로 만든 다크 톤 라인입니다.",
+        history:
+          "순혈 차콜 수컷을 중심으로 다크벅, 차콜 계열 암컷들과 아웃크로싱을 진행하고 있습니다. 단순히 ‘까맣게 만드는 것’이 아니라, 성장 후에도 발색이 무너지지 않고 디테일한 패턴이 살아 있는 것을 목표로 매칭을 조절하고 있습니다.",
+        bullets: [
+          "순혈 차콜 × 다크벅/차콜 라인 조합",
+          "성장 이후에도 유지되는 깊은 다크 톤",
+          "인브리딩을 피하면서도 원하는 톤을 유지하는 방향"
+        ],
+        images: [
+          "images/lines/charcoal-1.jpg",
+          "images/lines/charcoal-2.jpg",
+          "images/lines/charcoal-3.jpg",
+          "images/lines/charcoal-4.jpg",
+          "images/lines/charcoal-5.jpg"
+        ]
+      }
+    };
+
+
+    /* 4) 브리딩 라인 모달 로직 */
+    const lineOverlay = document.getElementById("line-overlay");
+    const lineMainImg = document.getElementById("line-main-img");
+    const lineTitleText = document.getElementById("line-title-text");
+    const lineTagText = document.getElementById("line-tag-text");
+    const lineSubtitleText = document.getElementById("line-subtitle-text");
+    const lineHistoryText = document.getElementById("line-history-text");
+    const lineBulletsList = document.getElementById("line-bullets-list");
+    const lineThumbs = document.getElementById("line-thumbs");
+    const lineCounter = document.getElementById("line-counter");
+
+    let currentLineKey = null;
+    let currentLinePhotoIndex = 0;
+
+    function openLineModal(key) {
+      const line = breedingLines[key];
+      if (!line) return;
+      currentLineKey = key;
+      currentLinePhotoIndex = 0;
+
+      lineTitleText.textContent = line.title;
+      lineTagText.textContent = line.tag;
+      lineSubtitleText.textContent = line.subtitle;
+      lineHistoryText.textContent = line.history;
+
+      lineBulletsList.innerHTML = (line.bullets || [])
+        .map(item => `<li>${item}</li>`).join("");
+
+      renderLineThumbnails();
+      updateLineMainImage();
+
+      lineOverlay.classList.add("active");
+      lineOverlay.setAttribute("aria-hidden", "false");
+    }
+
+    function closeLineModal() {
+      lineOverlay.classList.remove("active");
+      lineOverlay.setAttribute("aria-hidden", "true");
+    }
+
+    function renderLineThumbnails() {
+      const line = breedingLines[currentLineKey];
+      if (!line) return;
+      const images = Array.isArray(line.images) ? line.images : [];
+      lineThumbs.innerHTML = images.map((src, idx) => `
+        <button class="line-thumb ${idx === currentLinePhotoIndex ? "active" : ""}" type="button" onclick="setLinePhotoIndex(${idx})">
+          <img src="${src}" alt="${line.title} 라인 사진 ${idx + 1}" />
+        </button>
+      `).join("");
+
+      if (images.length > 0) {
+        lineCounter.textContent = `${currentLinePhotoIndex + 1} / ${images.length}`;
+      } else {
+        lineCounter.textContent = "";
+      }
+    }
+
+    function updateLineMainImage() {
+      const line = breedingLines[currentLineKey];
+      if (!line) return;
+      const images = Array.isArray(line.images) ? line.images : [];
+      if (images.length === 0) {
+        lineMainImg.src = "";
+        lineMainImg.alt = `${line.title} 라인 사진 준비중`;
+        return;
+      }
+      currentLinePhotoIndex = Math.max(0, Math.min(currentLinePhotoIndex, images.length - 1));
+      lineMainImg.src = images[currentLinePhotoIndex];
+      lineMainImg.alt = `${line.title} 라인 사진 ${currentLinePhotoIndex + 1}`;
+      renderLineThumbnails();
+    }
+
+    function setLinePhotoIndex(idx) {
+      currentLinePhotoIndex = idx;
+      updateLineMainImage();
+    }
+
+    // 카드 클릭 이벤트 연결
+    document.querySelectorAll('.card[data-line]').forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.getAttribute('data-line');
+        openLineModal(key);
+      });
+    });
+
+    // 라인 모달 바깥 클릭 시 닫기
+    lineOverlay.addEventListener("click", (e) => {
+      if (e.target === lineOverlay) {
+        closeLineModal();
+      }
+    });
+
+    // ESC로 라인 모달 닫기
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lineOverlay.classList.contains("active")) {
+        closeLineModal();
+      }
+    });
+
+    /* 5) 문의 폼 데모 처리 */
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('데모 페이지입니다. 실제 전송은 구현되어 있지 않습니다.\n실제 서비스에서는 메일/카카오/폼과 연동해 사용해 주세요!');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
