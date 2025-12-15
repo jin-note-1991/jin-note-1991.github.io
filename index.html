@@ -1881,24 +1881,58 @@
     });
 
     /* 1) 분양 개체 데이터 */
-    const geckos = [
-      // 아래는 예시 데이터입니다. 분양할 아이가 생기면 이 형식에 맞춰 추가해 주세요.
-       {
-         id: "CR-001",
-         name: "Pin Tri Extreme Harlequin",
-         price: "60만원",
-         status: "available", // available | reserved | sold
-         hatchDate: "2024-09-20",
-         weight: "30g",
-         sex: "수",
-         tags: ["Pin-Tri", "굵은 3차 형질", "프로스트 질감"],
-        note: "creyoung님의 샤넬2세인 박하와 자체 텐저린 암컷의 조합으로 입체감 있는 형질과 명확한 3차 형질을 자랑합니다",
-        images: [
-          "images/CR-001-1.jpg",
-          "images/CR-001-2.jpg"
-        ]
-      }
-    ];
+   const geckos = [
+  {
+    id: "CR-001",
+    name: "Pin Tri Extreme Harlequin",
+    price: "60만원",
+    status: "available", // available | reserved | sold
+    hatchDate: "2024-09-20",
+    weight: "30g",
+    sex: "수",
+    tags: ["Pin-Tri", "굵은 3차 형질", "프로스트 질감"],
+    note: "creyoung님의 샤넬2세인 박하와 자체 텐저린 암컷의 조합으로 입체감 있는 형질과 명확한 3차 형질을 자랑합니다",
+    images: [
+      "images/CR-001-1.jpg",
+      "images/CR-001-2.jpg"
+    ]
+  },
+
+  // 🔽 개체 2
+  {
+    id: "CA-001",
+    name: "차콜라인",
+    price: "20만원",
+    status: "available",
+    hatchDate: "2025-9-02",
+    weight: "4g",
+    sex: "미구분",
+    tags: ["차콜라인", "실물 색감 최고"],
+    note: "순혈차콜과 차콜라인의 조합으로 인브리딩으로 인한 문제를 최소화 했으며 어린 개체임에도 다크한 발색이 빼어납니다!",
+    images: [
+      "images/CA-003.jpg",
+      "images/CA-002.jpg",
+      "images/CA-001.jpg"
+    ]
+  },
+
+  // 🔽 개체 3
+  {
+    id: "LY-001",
+    name: "릴리화이트",
+    price: "50만원",
+    status: "available",
+    hatchDate: "2025-04-06",
+    weight: "10g",
+    sex: "수",
+    tags: ["릴리화이트", "월빡","두꺼운 형질"],
+    note: "선주비원더 님의 레옹X빡쵸 조합의 아이이며 화이트 월의 커버리지가 뛰어나고 사진보다 실물이 더 예쁜 타입입니다. 브리더로 영입하였으나 수컷으로 떠서 아쉽게 보냅니다.",
+    images: [
+      "images/LY-001.jpg"
+	,"images/LY-001.jpg"
+    ]
+  }
+];
 
 
     function getStatusBadge(status) {
